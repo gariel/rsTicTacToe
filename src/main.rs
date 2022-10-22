@@ -90,8 +90,8 @@ fn main() -> io::Result<()> {
 
         // read players input
         loop {
-            let x: usize = read(format!("Player {}, X", current_player), &onboard);
-            let y: usize = read(format!("Player {}, Y", current_player), &onboard);
+            let x: usize = read(format!("Player {}, position X: ", current_player), &onboard);
+            let y: usize = read(format!("Player {}, position Y: ", current_player), &onboard);
 
             if game[y - 1][x - 1] == " " {
                 game[y - 1][x - 1] = current_player;
